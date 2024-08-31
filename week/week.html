@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="left-pane">
+      <img src="download.jpg" alt="Project 1" onclick="showProject('project1')">
+      <img src="images.jpg" alt="Project 2" onclick="showProject('project2')">
+      <!-- More images -->
+    </div>
+    
+    <div class="right-pane" id="content-display">
+      <!-- Content for the selected project will be shown here -->
+    </div>
+  </div>
+  
+  <script>
+    function showProject(projectId) {
+      const contentDisplay = document.getElementById('content-display');
+      // Logic to update the content-display based on the projectId
+      if (projectId === 'download.jpg') {
+        contentDisplay.innerHTML = '<h1>download.jpg</h1><p>Description of Project 1...</p>';
+      } else if (projectId === 'project2') {
+        contentDisplay.innerHTML = '<h1>download.jpg</h1><p>Description of Project 2...</p>';
+      }
+      // Additional logic for other projects
+    }
+  </script>
+  
